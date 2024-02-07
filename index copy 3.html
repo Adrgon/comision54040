@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        const producto = {
+            nombre: "Play Station",
+            precio: 2000,
+            disponible: true,
+            informacion: {
+                peso: "1kg",
+                medida: "1m"
+            }
+        }
+
+        const cliente = {
+            nombre: "Adrian",
+            premiun: true
+        }
+
+const { informacion: { peso, medida }, nombre, apellido } = producto;
+
+console.log(apellido)
+console.log(peso)
+
+
+    </script>
+</body>
+</html>

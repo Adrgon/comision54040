@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // copia por valor 
+        // pasa con los valores primitivos
+        // string number boolean
+        let a = 15;
+        let b = a;
+
+        console.log(a) // 15
+        console.log(b) // 15
+
+        console.log("----------------")
+        a = 20;
+        console.log(a) // 20
+        console.log(b) // 15
+        console.log("----------------")
+
+        // copia por referencia
+        // tipo objeto en otros lenguajes le dicen punteros
+        
+        const obj1 = {x:15} // #10001100  --> x=15 
+        const obj2 = obj1.x
+        obj1 = { x: 15 }; // #10000011
+
+        console.log(obj1.x)
+        console.log(obj2.x)
+        console.log("----------------")
+
+        obj1.x = 20;
+        console.log(obj1.x) // 20
+        console.log(obj2.x) // 20
+
+
+/*         
+        const suma = () => { 1+1 }
+        const obj = {};
+        const arr = []; 
+*/
+
+
+
+    </script>
+</body>
+</html>
