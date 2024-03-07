@@ -1,0 +1,5 @@
+1 Creacion del proyecto
+2 Creacion del NavBar
+3 CartWidget
+4 ItemListContainer
+5 ItemCount
