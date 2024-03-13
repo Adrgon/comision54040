@@ -1,8 +1,12 @@
+import './ItemList.css'
+
+import {memo} from "react"
 import Item from "../Item/Item"
+
 
 const ItemList = ({products}) => {
   return (
-    <div>
+    <div className='ListGroup'>
         {
             products.map( prod => {
                 return <Item key={prod.id} {...prod} />
@@ -12,4 +16,4 @@ const ItemList = ({products}) => {
   )
 }
 
-export default ItemList
+export default memo(ItemList)
