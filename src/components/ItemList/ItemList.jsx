@@ -1,8 +1,9 @@
 import Item from "../Item/Item"
+import './ItemList.css'
 
 const ItemList = ({products}) => {
   return (
-    <div>
+    <div className='ListGroup' onClick={()=> console.log('hice click en itemList')}>
         {
             products.map( prod => {
                 return <Item key={prod.id} {...prod} />
@@ -12,4 +13,4 @@ const ItemList = ({products}) => {
   )
 }
 
-export default ItemList
+export default ItemList;
