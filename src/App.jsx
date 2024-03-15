@@ -5,7 +5,10 @@ import NavBar from "./components/NavBar/NavBar"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import {CartProvider} from './context/CartContext'
 import { NotificationProvider } from './context/Notification'
-/* import { Memorize } from './components/Memo/Memorize' */
+
+import Cart from './components/Cart/Cart'
+import Checkout from './components/Checkout/Checkout'
+
 
 
 function App() {
@@ -34,16 +37,13 @@ function App() {
                 path="/detail/:productId"
                 element={<ItemDetailContainer />}
               />
-              <Route path="/cart" element={<h1>Elementos en carrito</h1>} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="*" element={<h1>404 NOT FOUND</h1>} />
             </Routes>
           </CartProvider>
         </NotificationProvider>
       </BrowserRouter>
-      {/*       
-      <>
-        <Memorize />
-      </> 
-*/}
     </div>
   );
 }

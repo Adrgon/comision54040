@@ -1,0 +1,18 @@
+.Btn {
+    display: inline-block;
+    flex: none;
+    align-items: center;
+    flex-grow: 0;
+    justify-content: center;
+    align-self: center;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background-color: #8c30f5;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 10px;
+    padding: 12px;
+    outline: inherit;
+}
